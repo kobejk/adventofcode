@@ -1,2 +1,8 @@
 # ignore python environments
 env
+
+# mypy
+.mypy_cache
+
+# input files
+day_1a_input.txt
