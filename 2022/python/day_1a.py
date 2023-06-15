@@ -18,22 +18,24 @@ try:
             file_list.append(current_sublist)
             current_sublist = []
 
+    file.close()
+
     most_calories = 0
-    current_calories = 0
+    elf = 0
 
     # loop through each array and count calories
     for sublist in file_list:
-        for calorie_count in sublist:
-            current_calories += calorie_count
-
         # check if current list is more calories than the largest amount so far
-        if current_calories > most_calories:
-            most_calories = current_calories
+        if sum(sublist) > most_calories:
+            most_calories = sum(sublist)
+            elf = file_list.index(sublist)
 
-        current_calories = 0
+    # as .index() returns the index where the first element is 0, make it
+    # easier to read by giving the actual elf, not the index of the elf
+    elf += 1
 
-    print("The most calories being carried by an elf is:", most_calories)
+    print("The elf carrying the most calories is elf:", elf)
+    print("The most calories being carried by elf", elf, "is:", most_calories)
 
-    file.close()
 except Exception:
     print("Error opening file")
