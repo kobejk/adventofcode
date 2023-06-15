@@ -28,7 +28,7 @@ try:
     try:
         # find the top 3 elves with the most calories
         for x in range(3):
-            for index, sublist in file_list:
+            for index, sublist in enumerate(file_list):
                 # check if current list is more calories than the largest amount so far
                 if sum(sublist) > most_calories:
                     most_calories = sum(sublist)
