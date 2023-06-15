@@ -5,4 +5,4 @@ env
 .mypy_cache
 
 # input files
-day_1a_input.txt
+day_1_input.txt

@@ -1,6 +1,6 @@
 # open input file for reading, using text mode
 try:
-    file = open("day_1a_input.txt", "rt")
+    file = open("day_1_input.txt", "rt")
 
     # create some empty arrays
     file_list = []
