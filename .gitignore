@@ -4,5 +4,5 @@ env
 # mypy
 .mypy_cache
 
-# input files
-day_1_input.txt
+# formatters
+.null-ls*
