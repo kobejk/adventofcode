@@ -53,7 +53,8 @@ func main() {
 		elf += 1
 	}
 
-	fmt.Println("Elf", elf, "is carrying", maxCal, "calories.")
+	// fmt.Println("Elf", elf, "is carrying", maxCal, "calories.")
+	fmt.Printf("Elf %v is carrying %v calories.\n", elf, maxCal)
 
 	// check for any scanning errors
 	if err := scanner.Err(); err != nil {
